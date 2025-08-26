@@ -1,0 +1,8 @@
+res://Seens/game.tscn
+res://Seens/player.tscn
+res://Seens/coin.tscn
+res://Seens/killzone.tscn
+res://Seens/enemy.tscn
+res://Seens/mainmenu.tscn
+res://Seens/faders.tscn
+res://Scripts/game.gd

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cv0dk1qvu0xg2"
+path="res://.godot/imported/shocked-sound-effect.mp3-23abff115263be03052d6bed9e8b3706.mp3str"
+
+[deps]
+
+source_file="res://Assetss/Music/Sound effects/shocked-sound-effect.mp3"
+dest_files=["res://.godot/imported/shocked-sound-effect.mp3-23abff115263be03052d6bed9e8b3706.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

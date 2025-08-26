@@ -1,0 +1,14 @@
+WorldEnvironment
+Timer
+AnimationPlayer
+ColorRect
+TextureButton
+Button
+AudioStreamPlayer
+AudioStreamPlayer2D
+Label
+CollisionShape2D
+Area2D
+AnimatedSprite2D
+Node2D
+Sprite2D

@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=3 uid="uid://ci3x1xky884ep"]
+
+[ext_resource type="Script" uid="uid://pqymq3dm1eiw" path="res://Scripts/mainmenu.gd" id="1_vsg7p"]
+[ext_resource type="Texture2D" uid="uid://c2flf3uxk6fbt" path="res://Assetss/BG/1.png" id="2_a7c63"]
+[ext_resource type="Texture2D" uid="uid://c47drmtj5mma" path="res://MainMenu/Start.png" id="2_js5lx"]
+[ext_resource type="Texture2D" uid="uid://cdv2m7co3f5uv" path="res://MainMenu/Start (1).png" id="3_a7c63"]
+[ext_resource type="Texture2D" uid="uid://detupkwy4egn3" path="res://MainMenu/Quit (2).png" id="4_p7dh2"]
+[ext_resource type="Texture2D" uid="uid://buw4c4x77qn3b" path="res://MainMenu/Quit.png" id="5_hewqk"]
+[ext_resource type="PackedScene" uid="uid://drmqww3nwokxs" path="res://Seens/faders.tscn" id="7_p7dh2"]
+
+[node name="Main Menu" type="Node2D"]
+script = ExtResource("1_vsg7p")
+
+[node name="UntitledDesign(1)" type="Sprite2D" parent="."]
+position = Vector2(1088, 760)
+scale = Vector2(7.98899, 4.66667)
+texture = ExtResource("2_a7c63")
+
+[node name="Start" type="TextureButton" parent="."]
+offset_left = 496.0
+offset_top = 288.0
+offset_right = 872.0
+offset_bottom = 392.0
+texture_normal = ExtResource("2_js5lx")
+texture_pressed = ExtResource("3_a7c63")
+texture_hover = ExtResource("3_a7c63")
+
+[node name="Quit" type="TextureButton" parent="."]
+offset_left = 496.0
+offset_top = 432.0
+offset_right = 872.0
+offset_bottom = 536.0
+texture_normal = ExtResource("4_p7dh2")
+texture_pressed = ExtResource("5_hewqk")
+texture_hover = ExtResource("5_hewqk")
+
+[node name="fader" parent="." instance=ExtResource("7_p7dh2")]
+visible = false
+offset_left = -8.0
+offset_top = -24.0
+offset_right = 3784.0
+offset_bottom = 1848.0
+
+[node name="Fade_timer" type="Timer" parent="fader"]
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="timeout" from="fader/Fade_timer" to="." method="_on_fade_timer_timeout"]
